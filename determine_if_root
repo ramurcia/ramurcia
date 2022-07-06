@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#This script is meant to see if you are root while executing the script
+
+#Display the UID
+echo "Your UID is ${UID}."
+
+#Display if the use is the roor user or not. This will be done with and if statement.(spacing is very important)
+
+if [[ "${UID}" -eq 0 ]]
+then
+  echo "You are root."
+else
+  echo "You are not root."
+fi
+  
+#Once again you have to give x privileges to the script to execute it.
