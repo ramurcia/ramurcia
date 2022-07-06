@@ -1,0 +1,23 @@
+#!/bin/bash
+#This is a simple bash script that will display info about the system on which it is executed, it is using bash scripting
+
+# Tell the user the script is starting
+echo "Starting the sysinfo script"
+
+#Display the hostname
+hostname
+
+#Display current date/time when the info is collected
+date
+
+#Display kernel release followed by the architecture
+uname -r
+uname -m
+
+#In human readeable format display disk usage
+df -h
+
+#Print a that the script is finished
+echo "The script is finished"
+
+#Before running your script you have to make sure that the chmod +x is added to the file in order to execute it.
